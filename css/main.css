@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,400;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -145,7 +149,7 @@ section img {
   height: 264px;
   margin-bottom: 1em;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .project-title {
@@ -214,8 +218,8 @@ section img {
 
 @media only screen and (min-width: 1024px) {
   .cursor,
-.cursor2,
-.cursor3 {
+  .cursor2,
+  .cursor3 {
     position: fixed;
     border-radius: 50%;
     transform: translateX(15px) translateY(15px);
@@ -230,7 +234,7 @@ section img {
     width: 0;
   }
   .cursor2,
-.cursor3 {
+  .cursor3 {
     height: 0px;
     width: 0px;
     transition: all 200ms ease-out;
@@ -238,7 +242,7 @@ section img {
     background-size: 0 0;
   }
   .cursor2.hover,
-.cursor3.hover {
+  .cursor3.hover {
     height: 220px;
     width: 320px;
     border: none;
@@ -252,38 +256,38 @@ section img {
     background-size: cover;
   }
   body.img-1-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("../images/research.gif");
   }
   body.img-2-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("../images/wireframe.gif");
   }
   body.img-3-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("https://assets.codepen.io/1462889/sl3.jpg");
   }
   body.img-4-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("https://assets.codepen.io/1462889/sl4.jpg");
   }
   body.img-5-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("https://assets.codepen.io/1462889/sl4.jpg");
   }
   body.img-6-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: url("https://assets.codepen.io/1462889/sl4.jpg");
   }
   body.mail-wrap .cursor2,
-.cursor3 {
+  .cursor3 {
     background-image: none;
     height: 36px;
     width: 36px;
     z-index: 5;
   }
   body.mail-wrap .cursor2.hover,
-body.mail-wrap .cursor3.hover {
+  body.mail-wrap .cursor3.hover {
     height: 42px;
     width: 42px;
     transform: scale(2) translateX(-25%) translateY(-25%);
@@ -292,7 +296,7 @@ body.mail-wrap .cursor3.hover {
     transition: all 0.08s ease-out;
   }
   body.mail-wrap .cursor2.hover::before,
-body.mail-wrap .cursor3.hover::before {
+  body.mail-wrap .cursor3.hover::before {
     content: "copy!";
     background-color: transparent !important;
     color: #333;
@@ -304,7 +308,7 @@ body.mail-wrap .cursor3.hover::before {
     font-size: 10px;
   }
   .right-col-wrap .cursor2,
-.cursor3.hover {
+  .cursor3.hover {
     background-image: none;
     background-color: transparent;
     height: 50px;
@@ -313,7 +317,7 @@ body.mail-wrap .cursor3.hover::before {
     transform: translateX(-217px) translateY(35px);
   }
   .right-col-wrap .cursor2::before,
-.cursor3.hover::before {
+  .cursor3.hover::before {
     background-color: rgb(252, 86, 86);
     border-radius: 50px 0px 50px 50px;
     content: "scroll down to see my work 👇";
@@ -419,7 +423,7 @@ body.mail-wrap .cursor3.hover::before {
     width: 100%;
     justify-content: center;
     -webkit-animation: bounce 3.5s infinite;
-            animation: bounce 3.5s infinite;
+    animation: bounce 3.5s infinite;
   }
   .more-about p {
     display: none;
@@ -455,7 +459,7 @@ body.mail-wrap .cursor3.hover::before {
     background-color: #f2d32c;
     color: #000;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
     justify-content: start;
   }
   .more-about:hover p {
@@ -514,7 +518,17 @@ body.mail-wrap .cursor3.hover::before {
     color: #333;
   }
   .project-container:hover {
-    background: linear-gradient(157deg, rgba(255, 191, 112, 0.88), rgba(255, 0, 0, 0.27) 70.71%), linear-gradient(127deg, rgba(255, 230, 194, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(176deg, rgba(215, 255, 0, 0.7), rgb(238, 255, 218) 70.71%);
+    background: linear-gradient(
+        157deg,
+        rgba(255, 191, 112, 0.88),
+        rgba(255, 0, 0, 0.27) 70.71%
+      ),
+      linear-gradient(
+        127deg,
+        rgba(255, 230, 194, 0.8),
+        rgba(0, 255, 0, 0) 70.71%
+      ),
+      linear-gradient(176deg, rgba(215, 255, 0, 0.7), rgb(238, 255, 218) 70.71%);
   }
   .hire-me {
     background-color: #f2f2f2;
@@ -551,4 +565,4 @@ body.mail-wrap .cursor3.hover::before {
   .social-icons img {
     height: 2em;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
