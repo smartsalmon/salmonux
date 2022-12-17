@@ -75,14 +75,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var hoverLink = document.querySelector(".img-1");
+  var hoverLink = document.querySelector(".more-about");
   var bodychange = document.querySelector("body");
 
   hoverLink.addEventListener("mouseenter", function (e) {
-    bodychange.classList.add("img-1-wrap");
+    bodychange.classList.add("more-about-wrap");
   });
   hoverLink.addEventListener("mouseleave", function () {
-    bodychange.classList.remove("img-1-wrap");
+    bodychange.classList.remove("more-about-wrap");
   });
 });
 document.addEventListener("DOMContentLoaded", function () {
@@ -147,21 +147,16 @@ document.addEventListener("DOMContentLoaded", function () {
 //         Copy Mail
 // --------------------------------------------
 
-// function copy(that) {
-//   var inp = document.createElement("input");
-//   document.body.appendChild(inp);
-//   inp.value = that.textContent;
-//   inp.select();
-//   document.execCommand("copy", false);
-//   inp.remove();
-// }
-
-// function copyElementText(id) {
-//   var text = document.getElementById(id).innerText;
-//   var elem = document.createElement("textarea");
-//   document.body.appendChild(elem);
-//   elem.value = text;
-//   elem.select();
-//   document.execCommand("copy");
-//   document.body.removeChild(elem);
-// }
+let text = document.getElementById("my-contact").innerHTML;
+const copyContent = async () => {
+  try {
+    await navigator.clipboard.writeText(text);
+    document.getElementById("custom-tooltip").style.display = "block";
+    setTimeout(function () {
+      document.getElementById("custom-tooltip").style.display = "none";
+    }, 1000);
+    console.log("Content copied to clipboard");
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+};
