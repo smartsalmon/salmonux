@@ -182,6 +182,10 @@ section img {
   color: #333;
 }
 
+#custom-tooltip {
+  display: none;
+}
+
 .resume {
   display: flex;
   align-items: center;
@@ -408,17 +412,57 @@ body.mail-wrap .cursor3.hover::before {
   }
   .more-about {
     margin: 0;
-    background-color: #f2d32c;
-    color: #000;
+    background-color: rgba(225, 225, 225, 0.3137254902);
+    color: rgba(44, 103, 255, 0.062745098);
     padding: 0.5em;
     font-size: 0.875em;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    -webkit-animation: bounce 3.5s infinite;
+            animation: bounce 3.5s infinite;
+  }
+  .more-about p {
+    display: none;
   }
   .more-about span {
     display: inline;
-    color: #2c67ff;
+    color: #fff;
     font-weight: 700;
+  }
+  @-webkit-keyframes bounce {
+    0% {
+      background-color: rgba(225, 225, 225, 0.3137254902);
+    }
+    50% {
+      background-color: rgba(225, 225, 225, 0.5019607843);
+    }
+    100% {
+      background-color: rgba(225, 225, 225, 0.3137254902);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      background-color: rgba(225, 225, 225, 0.3137254902);
+    }
+    50% {
+      background-color: rgba(225, 225, 225, 0.5019607843);
+    }
+    100% {
+      background-color: rgba(225, 225, 225, 0.3137254902);
+    }
+  }
+  .more-about:hover {
+    background-color: #f2d32c;
+    color: #000;
+    -webkit-animation: none;
+            animation: none;
+    justify-content: start;
+  }
+  .more-about:hover p {
+    display: inline;
+  }
+  .more-about:hover span {
+    display: none;
   }
   .about-ps {
     padding: 0;
