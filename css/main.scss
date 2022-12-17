@@ -200,6 +200,11 @@ section {
   color: #333;
 }
 
+#custom-tooltip {
+  display: none;
+  // clip: rect(1px, 1px, 1px, 1px);
+}
+
 .resume {
   display: flex;
   align-items: center;
@@ -464,16 +469,49 @@ section {
 
   .more-about {
     margin: 0;
-    background-color: #f2d32c;
-    color: #000;
+    background-color: #e1e1e150;
+    color: #2c67ff10;
     padding: 0.5em;
     font-size: 0.875em;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    animation: bounce 3.5s infinite;
+
+    p {
+      display: none;
+    }
+
     span {
       display: inline;
-      color: #2c67ff;
+      color: #fff;
       font-weight: 700;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      background-color: #e1e1e150;
+    }
+    50% {
+      background-color: #e1e1e180;
+    }
+    100% {
+      background-color: #e1e1e150;
+    }
+  }
+
+  .more-about:hover {
+    background-color: #f2d32c;
+    color: #000;
+    animation: none;
+    justify-content: start;
+
+    p {
+      display: inline;
+    }
+
+    span {
+      display: none;
     }
   }
 
