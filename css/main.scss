@@ -181,8 +181,8 @@ section {
 
     img {
       display: inline-block;
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
   }
   a {
@@ -590,13 +590,17 @@ section {
     }
   }
   .project-container:hover {
-    background: linear-gradient(
-        157deg,
-        rgb(255 191 112 / 88%),
-        rgb(255 0 0 / 27%) 70.71%
-      ),
-      linear-gradient(127deg, rgb(255 230 194 / 80%), rgba(0, 255, 0, 0) 70.71%),
-      linear-gradient(176deg, rgb(215 255 0 / 70%), rgb(238 255 218) 70.71%);
+    // background: linear-gradient(
+    //     157deg,
+    //     rgb(255 191 112 / 88%),
+    //     rgb(255 0 0 / 27%) 70.71%
+    //   ),
+    //   linear-gradient(127deg, rgb(255 230 194 / 80%), rgba(0, 255, 0, 0) 70.71%),
+    //   linear-gradient(176deg, rgb(215 255 0 / 70%), rgb(238 255 218) 70.71%);
+
+    background: linear-gradient(174deg, #3c84f7, #8acfff47 70.71%),
+      linear-gradient(127deg, #f2d32c, rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(176deg, #f2d32c, #2c67ff00 70.71%);
   }
 
   // =================================================================================
