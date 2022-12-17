@@ -15,7 +15,6 @@
             <a href="index.html" class="logo">salmon ux</a>
             <nav>
               <ul>
-                <!-- <li><a href="#">My work</a></li> -->
                 <li><a href="#lets-connect">#Let's_connect</a></li>
               </ul>
             </nav>
@@ -26,79 +25,33 @@
           <div class="content">
             <div class="about-me">
               <h1 class="stagger1">Hi, I'm Mahmoud Ahmed</h1>
-              <p class="job-title">I'm a digital product designer with over three years conceptualizing and crafting digital products 🧠</p>  
-              <p class="more-about">[I have a good understanding of design principles and tools. I also have a good technical background as I have a BS in computer engineering. which helps me a lot collaborating with product, engineering, and management teams]</p>
-              <p class="about-ps">PS: I'm a fast learner - Highly empathic person - very felxible</p>
-            </div>
-            <!-- <div class="skills">
-              <p class="skills-title">What makes me good?</p>
-              <div class="skills-grid">
-                <div class="skill">
-                  <p>🧠</p>
-                  <p class="skill-description">I learn fast! very fast!</p>
-                </div>
-                <div class="skill">
-                  <p>🫀</p>
-                  <p class="skill-description">Highly empathic Person</p>
-                </div>
-                <div class="skill">
-                  <p>🤸‍♂️</p>
-                  <p class="skill-description">Very felxable</p>
-                </div>
+              <p class="job-title">I'm a digital product designer with over three years turning the objective of the product into a functional user experience 🚀</p>  
+              <p class="more-about">PS: This portfolio is designed and coded by me 🦄 <span>(Hover me)</span></p>
+              <!-- <p class="about-ps">PS: I'm a fast learner - Highly empathic person - very felxable</p> -->
+              <div class="social-icons">
+                <a class="social-icon" href="#"
+                  ><img src="./images/Behance.svg" alt=""
+                /></a>
+                <a class="social-icon" href="#"
+                  ><img src="./images/linkedin.svg" alt=""
+                /></a>
               </div>
-            </div> -->
+            </div>
+
           </div>
         </div>
       </div>
       <div class="right-col">
         <div class="video-player">
           <video autoplay loop muted src="./images/Comp 2.mp4"></video>
-
-          <!-- <img src="/images/filloffer.jpg" alt="" /> -->
         </div>
       </div>
     </div>
     
 
-    <!-- <section class="featured">
-      <div class="section-title">
-        <span>🫀</span>
-        <h1>What I do?</h1>
-      </div>
-      <div class="content">
-        <div class="skill-txt">
-          <p class="hover-target img-1">Research</p>
-        </div>
-        <div class="skill-txt">
-          <p class="hover-target img-2">Wireframes</p>
-        </div>
 
-        <div class="skill-txt">
-          <p class="hover-target img-3">Prototype</p>
-          <img class="hiddenimg" src="./images/Hero.png" />
-        </div>
-
-        <div class="skill-txt">
-          <p class="hover-target img-4">Testing</p>
-        </div>
-
-        <div class="skill-txt">
-          <p class="hover-target img-5">UI Design</p>
-        </div>
-
-        <div class="skill-txt">
-          <p class="hover-target img-6">Interactions</p>
-        </div>
-      </div>
-    </section> -->
-    <!-- <div class="scrolling">
-      <img src="./images/scrolling.gif" alt="" />
-    </div> -->
     <section class="projects">
-      <!-- <div class="section-title">
-        <span>🫀</span>
-        <h1>Projects</h1>
-      </div> -->
+
       <div class="projects-container">
         <div class="project-container">
           <a href="#"
@@ -122,7 +75,7 @@
         </div>
         <div class="project-container">
           <a href="#"
-            ><img class="project-img" src="./images/smarp.png" alt=""
+            ><img class="project-img" src="./images/0846ce140071421.623b088c74306.png" alt=""
           /></a>
           <div class="project-title">
             <a href="#">
@@ -142,7 +95,7 @@
         </div>
         <div class="project-container">
           <a href="#"
-            ><img class="project-img" src="./images/smarp.png" alt=""
+            ><img class="project-img" src="./images/087d26140071421.623b088c758cf.png" alt=""
           /></a>
           <div class="project-title">
             <a href="#">
@@ -162,7 +115,7 @@
         </div>
         <div class="project-container">
           <a href="#"
-            ><img class="project-img" src="./images/smarp.png" alt=""
+            ><img class="project-img" src="./images/filloffer.jpg" alt=""
           /></a>
           <div class="project-title">
             <a href="#">
@@ -228,34 +181,31 @@
     </section>
     <section class="hire-me" id="lets-connect">
       <h3>let's connetct</h3>
-      <a class="hover-target mail">
+      <a onclick="copyContent()" class="hover-target mail">
         <!-- <div class="cursor"></div>  -->
         <h1 id="my-contact" >m.ahmed9797@gmail.com</h1>
       </a>
-                  <div class="social-icons">
-              <a class="social-icon" href="#"
-                ><img src="./images/Behance.svg" alt=""
-              /></a>
-              <a class="social-icon" href="#"
-                ><img src="./images/linkedin.svg" alt=""
-              /></a>
-            </div>
+      <span id="custom-tooltip">copied! 👍</span>
+      <a class="resume" href="./Pdf/Mahmoud Ahmed.pdf" download>
+        <i>
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+            <mask id="mask0_122_235" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25">
+            <rect x="0.0869141" y="0.574707" width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_122_235)">
+            <path d="M6.08691 20.5747C5.53691 20.5747 5.06625 20.379 4.67491 19.9877C4.28291 19.5957 4.08691 19.1247 4.08691 18.5747V15.5747H6.08691V18.5747H18.0869V15.5747H20.0869V18.5747C20.0869 19.1247 19.8912 19.5957 19.4999 19.9877C19.1079 20.379 18.6369 20.5747 18.0869 20.5747H6.08691ZM12.0869 16.5747L7.08691 11.5747L8.48691 10.1247L11.0869 12.7247V4.57471H13.0869V12.7247L15.6869 10.1247L17.0869 11.5747L12.0869 16.5747Z" fill="#F2F2F2"/>
+            </g>
+            </svg>
+        </i>
+        Mahmoud Ahmed - Resume.pdf</a>
+
     </section>
 
     <div class='cursor' id="cursor"></div>
 	<div class='cursor2' id="cursor2"></div>
 	<div class='cursor3' id="cursor3"></div> 
 	</div>
-    <!-- <script type="text/javascript">
-      const cursor = document.querySelector(".cursor");
 
-      document.addEventListener("mousemove", function (e) {
-        var x = e.pageX;
-        var y = e.pageY;
-        cursor.style.left = x + "px";
-        cursor.style.top = y + "px";
-      });
-    </script> -->
     <script src="./js/script.js"></script>
   </body>
 </html>
