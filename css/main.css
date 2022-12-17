@@ -166,8 +166,8 @@ section img {
 }
 .project-title .link-svg img {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 .project-title a {
   display: inline-block;
@@ -524,7 +524,7 @@ body.mail-wrap .cursor3.hover::before {
     color: #333;
   }
   .project-container:hover {
-    background: linear-gradient(157deg, rgba(255, 191, 112, 0.88), rgba(255, 0, 0, 0.27) 70.71%), linear-gradient(127deg, rgba(255, 230, 194, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(176deg, rgba(215, 255, 0, 0.7), rgb(238, 255, 218) 70.71%);
+    background: linear-gradient(174deg, #3c84f7, rgba(138, 207, 255, 0.2784313725) 70.71%), linear-gradient(127deg, #f2d32c, rgba(0, 255, 0, 0) 70.71%), linear-gradient(176deg, #f2d32c, rgba(44, 103, 255, 0) 70.71%);
   }
   .hire-me {
     background-color: #f2f2f2;
